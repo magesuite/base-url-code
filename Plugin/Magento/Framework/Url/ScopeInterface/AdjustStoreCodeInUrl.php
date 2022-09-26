@@ -39,7 +39,7 @@ class AdjustStoreCodeInUrl
 
     protected function getStoreUrl(\Magento\Framework\Url\ScopeInterface $store, $secure): string
     {
-        $baseUrl = $store->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_WEB, $secure);
+        $baseUrl = $store->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_DIRECT_LINK, $secure);
 
         if (!$store->getConfig(\Magento\Store\Model\Store::XML_PATH_STORE_IN_URL)) {
             return $baseUrl;

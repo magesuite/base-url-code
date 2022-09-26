@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="web">
+            <group id="url">
+                <field id="default_url_code" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Default URL Code</label>
+                    <frontend_class>cs-csfeature__logo</frontend_class>
+                    <depends>
+                        <field id="use_store">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

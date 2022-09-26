@@ -49,7 +49,7 @@ class StoreResolverTest extends \PHPUnit\Framework\TestCase
     public function testInitStoreMethodReturnsProperStore()
     {
         $request = $this->objectManager->get(\Magento\Framework\App\RequestInterface::class);
-        $request->setUri('http://localhost/en-us/');
+        $request->setUri('http://localhost/index.php/en-us/');
         $store = $this->storeRepository->get('second_store_with_url_code');
         $expectedStore = $this->storeResolver->initStore('en-us');
         $this->assertEquals($store->getCode(), $expectedStore->getStore()->getCode());

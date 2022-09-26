@@ -27,6 +27,7 @@ class SitemapTest extends \PHPUnit\Framework\TestCase
      * @magentoDbIsolation enabled
      * @magentoAppArea frontend
      * @magentoDataFixture MageSuite_BaseUrlCode::Test/Integration/_files/sitemap.php
+     * @magentoConfigFixture second_store_with_url_code_store web/seo/use_rewrites 1
      * @magentoConfigFixture second_store_with_url_code_store web/url/use_store 1
      * @magentoConfigFixture second_store_with_url_code_store web/unsecure/base_url http://example.com/
      * @magentoConfigFixture second_store_with_url_code_store web/unsecure/base_link_url http://example.com/

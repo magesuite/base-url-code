@@ -49,7 +49,7 @@ class AdjustStoreCodeInUrl
         $urlCode = $store->getUrlCode();
 
         if (empty($urlCode)) {
-            $urlCode = $store->getConfig(\MageSuite\BaseUrlCode\Helper\Configuration::XML_PATH_WEB_URL_DEFAULT_URL_CODE);
+            $urlCode = $store->getCode();
         }
 
         return sprintf('%s%s/', $baseUrl, $urlCode);

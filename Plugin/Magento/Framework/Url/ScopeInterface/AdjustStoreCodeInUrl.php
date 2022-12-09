@@ -19,7 +19,9 @@ class AdjustStoreCodeInUrl
         $secure = null
     ): string {
         if ($store->getCode() === \Magento\Store\Model\Store::ADMIN_CODE) {
-            return $proceed($type, $secure);
+            $result = $proceed($type, $secure);
+
+            return str_replace(\Magento\Store\Model\Store::ADMIN_CODE . '/', '', $result);
         }
 
         try {
